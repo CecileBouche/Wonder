@@ -1,0 +1,22 @@
+/** question **/
+
+.question-content {
+    border-bottom: 1px solid var(--grey-light)
+}
+
+.rating-up {
+    color: var(--primary);
+}
+
+.rating-down {
+    color: var(--warning);
+}
+
+/** question text **/
+
+
+.question-text,
+.question-response-text {
+    line-height: var(--line-height-high);
+    white-space: pre-wrap;
+}

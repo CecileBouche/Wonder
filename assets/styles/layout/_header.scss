@@ -1,0 +1,53 @@
+@use '../mixin' as *;
+
+/** header **/
+
+header {
+    box-shadow: var(--box-shadow);
+}
+
+.header-search {
+    margin: 0 10px;
+    border-radius: var(--border-radius);
+    background-color: var(--grey-light);
+    max-width: 400px;
+    position: relative;
+    @include xs {
+        display: none;
+    }
+    &-loading {
+        height: 30px;
+    }
+    &-result {
+        width: 100%;
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0px;
+        background-color: white;
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+        padding: 10px;
+        a {
+            padding: 10px;
+        }
+    }
+}
+
+.header-search input {
+    border: 0;
+    outline: 0;
+    background-color: var(--grey-light);
+    height: 30px;
+}
+
+.header-logo {
+    width: 150px;
+}
+
+.header-logo img {
+    max-width: 150px;
+}
+
+.xs-hide {
+
+}

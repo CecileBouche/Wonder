@@ -1,0 +1,23 @@
+
+/** sidebar **/
+
+.sidebar {
+    min-width: 200px;
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-size: var(--font-size-small);
+}
+
+.sidebar-nav a:hover {
+    opacity: 0.5;
+    transition: opacity 0.4s;
+}
+
+.sidebar-nav a i {
+    color: var(--primary);
+}
