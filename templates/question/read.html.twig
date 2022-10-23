@@ -16,7 +16,7 @@
         <div class="d-flex flex-row-nowrap align-items-center pb-30">
           <h3 class="mr-10">{{ question.title }}</h3>
           <div class="question-tag">QUESTION</div>
-          <img class="avatar ml-auto" src="{{ question.author.picture }}">
+          <img class="avatar ml-auto" src="{{ asset(question.author.picture) }}">
         </div>
         <p class="question-text"> {{ question.content }} </p>
         {% if question.comments is not empty %}
@@ -27,7 +27,7 @@
             {% include "partials/_rating.html.twig" with { rating: comment.rating, from: 'comment', id: comment.id  } %}
             <a href='{{ path('user', {id : comment.author.id }) }}' class="d-flex flex-column">
               <div class="d-flex flex-row-nowrap align-items-center pb-10">
-                <img class="avatar mr-10" src="{{ comment.author.picture }}">
+                <img class="avatar mr-10" src="{{ asset(comment.author.picture) }}">
                 <p class="clickable">{{ comment.author.fullname }}</p>
                 <small class="ml-auto">{{ comment.createdAt | ago(locale="fr") }}</small>
               </a>

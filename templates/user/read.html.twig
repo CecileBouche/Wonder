@@ -5,7 +5,7 @@
 {% block body %}
     <h2 class="pb-30">{{ user.fullname }}</h2>
     <div class=" mb-30 d-flex flex-row-nowrap">
-        <img src="{{ user.picture }}" alt="" class="mr-10 profile-picture">
+        <img src="{{ asset(user.picture) }}" alt="" class="mr-10 profile-picture">
         <ul>
             <li>
                 <strong class="mb-10">Prénom : </strong>{{ user.firstname }}
