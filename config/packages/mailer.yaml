@@ -1,5 +1,5 @@
 framework:
-    mailer:
-        dsn: '%env(MAILER_DSN)%'
-        headers:
-            from: 'Cecile <no-reply@wonder.com>'
+  mailer:
+    dsn: "%env(MAILER_DSN)%"
+    headers:
+      from: "Cecile <contact@lesitedececile.fr>"
